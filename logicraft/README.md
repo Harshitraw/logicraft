@@ -31,3 +31,5 @@ synced when the frontend starts.
 See [backend/README.md](./backend/README.md) for API details and backend setup.
 See [CODEBASE.md](./CODEBASE.md) for the application architecture and source
 file guide.
+
+Updated README for the version control assignment.
