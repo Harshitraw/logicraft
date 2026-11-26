@@ -1,0 +1,334 @@
+{
+  "orders": [
+    {
+      "id": "ORD-2026-10482",
+      "customer": "Northstar Retail",
+      "email": "ops@northstar.example",
+      "phone": "+1 (312) 555-0184",
+      "pickup": "Newark Distribution Center, NJ",
+      "delivery": "Chicago Fulfillment Hub, IL",
+      "item": "Consumer electronics",
+      "quantity": 48,
+      "weight": 620,
+      "pickupDate": "2026-10-01",
+      "deliveryDate": "2026-10-03",
+      "instructions": "Keep cartons upright. Call receiving 30 minutes before arrival.",
+      "status": "Active",
+      "shipment": "SHP-2026-08421",
+      "tracking": "TRK-2026-08421",
+      "driver": "Christina Kamberina",
+      "vehicle": "VAN-204 · Box truck",
+      "eta": "Oct 03, 10:30 AM",
+      "history": [
+        {
+          "label": "Order created",
+          "date": "Oct 01, 2026",
+          "note": "Order confirmed by Northstar Retail"
+        }
+      ]
+    },
+    {
+      "id": "ORD-2026-10476",
+      "customer": "Harbor & Pine",
+      "email": "logistics@harborpine.example",
+      "phone": "+1 (617) 555-0127",
+      "pickup": "Queens Sorting Center, NY",
+      "delivery": "Boston Retail Warehouse, MA",
+      "item": "Home goods",
+      "quantity": 26,
+      "weight": 340,
+      "pickupDate": "2026-10-01",
+      "deliveryDate": "2026-10-02",
+      "instructions": "Dock 4. Delivery window 1:00 PM to 4:00 PM.",
+      "status": "Pending",
+      "shipment": "Not assigned",
+      "tracking": "Not assigned",
+      "driver": "Not assigned",
+      "vehicle": "Not assigned",
+      "eta": "Awaiting dispatch",
+      "history": [
+        {
+          "label": "Order created",
+          "date": "Oct 01, 2026",
+          "note": "Awaiting dispatch assignment"
+        }
+      ]
+    },
+    {
+      "id": "ORD-2026-10438",
+      "customer": "Evergreen Supply Co.",
+      "email": "warehouse@evergreen.example",
+      "phone": "+1 (206) 555-0141",
+      "pickup": "Portland Cross-Dock, OR",
+      "delivery": "Seattle South Warehouse, WA",
+      "item": "Packaged food",
+      "quantity": 110,
+      "weight": 840,
+      "pickupDate": "2026-09-30",
+      "deliveryDate": "2026-10-01",
+      "instructions": "Temperature-controlled vehicle required.",
+      "status": "Completed",
+      "shipment": "SHP-2026-08396",
+      "tracking": "TRK-2026-08396",
+      "driver": "Avery Chen",
+      "vehicle": "VAN-092 · Box truck",
+      "eta": "Delivered Oct 01, 9:42 AM",
+      "history": [
+        {
+          "label": "Delivered",
+          "date": "Oct 01, 2026",
+          "note": "Received by warehouse team"
+        }
+      ]
+    }
+  ],
+  "shipments": [
+    {
+      "id": "SHP-2026-08421",
+      "tracking": "TRK-2026-08421",
+      "orderId": "ORD-2026-10482",
+      "customer": "Northstar Retail",
+      "pickup": "Newark Distribution Center, NJ",
+      "destination": "Chicago Fulfillment Hub, IL",
+      "driver": "Christina Kamberina",
+      "vehicle": "VAN-204 · Box truck",
+      "status": "In Transit",
+      "deliveryDate": "2026-10-03",
+      "eta": "Oct 03, 10:30 AM",
+      "etaConfidence": "94%",
+      "etaType": "ML predicted",
+      "currentLocation": "I-80, near Joliet, IL",
+      "history": [
+        {
+          "status": "In Transit",
+          "date": "Oct 01, 1:25 PM",
+          "location": "I-80, near Joliet, IL"
+        }
+      ]
+    },
+    {
+      "id": "SHP-2026-08396",
+      "tracking": "TRK-2026-08396",
+      "orderId": "ORD-2026-10438",
+      "customer": "Evergreen Supply Co.",
+      "pickup": "Portland Cross-Dock, OR",
+      "destination": "Seattle South Warehouse, WA",
+      "driver": "Avery Chen",
+      "vehicle": "VAN-092 · Box truck",
+      "status": "Delivered",
+      "deliveryDate": "2026-10-01",
+      "eta": "Delivered Oct 01, 9:42 AM",
+      "etaConfidence": "99%",
+      "etaType": "ML predicted",
+      "currentLocation": "Seattle South Warehouse, WA",
+      "history": [
+        {
+          "status": "Delivered",
+          "date": "Oct 01, 9:42 AM",
+          "location": "Seattle South Warehouse, WA"
+        }
+      ]
+    }
+  ],
+  "drivers": [
+    {
+      "id": "DRV-032",
+      "name": "Christina Kamberina",
+      "phone": "+1 (312) 555-0184",
+      "email": "christina.k@logicraft.example",
+      "licenseNumber": "IL-C4821-3904",
+      "licenseClass": "Class A",
+      "licenseExpiry": "2028-04-18",
+      "availability": "On Trip",
+      "vehicle": "VAN-204 · Box truck",
+      "completedTrips": 86,
+      "onTimeRate": 96,
+      "rating": 4.9,
+      "tripHistory": []
+    },
+    {
+      "id": "DRV-092",
+      "name": "Avery Chen",
+      "phone": "+1 (206) 555-0141",
+      "email": "avery.chen@logicraft.example",
+      "licenseNumber": "WA-C2044-6218",
+      "licenseClass": "Class C",
+      "licenseExpiry": "2028-08-30",
+      "availability": "Available",
+      "vehicle": "VAN-092 · Box truck",
+      "completedTrips": 68,
+      "onTimeRate": 98,
+      "rating": 5,
+      "tripHistory": []
+    },
+    {
+      "id": "DRV-018",
+      "name": "Daniel Brooks",
+      "phone": "+1 (617) 555-0127",
+      "email": "daniel.b@logicraft.example",
+      "licenseNumber": "MA-B1377-8540",
+      "licenseClass": "Class B",
+      "licenseExpiry": "2027-11-02",
+      "availability": "Available",
+      "vehicle": "VAN-118 · Cargo van",
+      "completedTrips": 54,
+      "onTimeRate": 93,
+      "rating": 4.8,
+      "tripHistory": []
+    }
+  ],
+  "inventory": [
+    {
+      "id": "SKU-EL-104",
+      "name": "Wireless charging dock",
+      "category": "Electronics",
+      "location": "A-01-03",
+      "onHand": 420,
+      "reserved": 82,
+      "reorderPoint": 100,
+      "unit": "units"
+    },
+    {
+      "id": "SKU-HG-221",
+      "name": "Stoneware dinner set",
+      "category": "Home goods",
+      "location": "B-03-07",
+      "onHand": 74,
+      "reserved": 22,
+      "reorderPoint": 80,
+      "unit": "sets"
+    },
+    {
+      "id": "SKU-FD-030",
+      "name": "Organic ground coffee",
+      "category": "Food & beverage",
+      "location": "C-02-01",
+      "onHand": 1620,
+      "reserved": 190,
+      "reorderPoint": 250,
+      "unit": "cases"
+    },
+    {
+      "id": "SKU-PK-512",
+      "name": "Shipping cartons · M",
+      "category": "Packaging",
+      "location": "D-01-12",
+      "onHand": 2830,
+      "reserved": 360,
+      "reorderPoint": 400,
+      "unit": "cartons"
+    }
+  ],
+  "inbound": [
+    {
+      "id": "RCV-2026-0418",
+      "supplier": "Evergreen Supply Co.",
+      "purchaseOrder": "PO-11842",
+      "itemId": "SKU-EL-104",
+      "quantity": 240,
+      "eta": "Oct 02 · 9:30 AM",
+      "dock": "Dock 02",
+      "status": "Expected"
+    },
+    {
+      "id": "RCV-2026-0417",
+      "supplier": "Harbor Home Imports",
+      "purchaseOrder": "PO-11831",
+      "itemId": "SKU-HG-221",
+      "quantity": 120,
+      "eta": "Oct 02 · 1:00 PM",
+      "dock": "Dock 04",
+      "status": "Expected"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "PICK-ORD-2026-10482",
+      "orderId": "ORD-2026-10482",
+      "customer": "Northstar Retail",
+      "item": "Consumer electronics",
+      "quantity": 48,
+      "destination": "Chicago Fulfillment Hub, IL",
+      "status": "Dispatched",
+      "shipmentId": "SHP-2026-08421"
+    },
+    {
+      "id": "PICK-ORD-2026-10476",
+      "orderId": "ORD-2026-10476",
+      "customer": "Harbor & Pine",
+      "item": "Home goods",
+      "quantity": 26,
+      "destination": "Boston Retail Warehouse, MA",
+      "status": "Awaiting Pick",
+      "shipmentId": ""
+    }
+  ],
+  "conversations": [
+    {
+      "id": "CONV-DRIVER-032",
+      "name": "Christina Kamberina",
+      "role": "Driver",
+      "initials": "CK",
+      "presence": "On trip",
+      "unread": 1,
+      "context": "SHP-2026-08421",
+      "contextLabel": "In transit · Newark to Chicago",
+      "latest": "Traffic has slowed near Joliet. Still on track for the current ETA.",
+      "updated": "1:25 PM",
+      "messages": [
+        {
+          "id": "MSG-001",
+          "from": "contact",
+          "text": "Traffic has slowed near Joliet. Still on track for the current ETA.",
+          "time": "1:25 PM"
+        }
+      ]
+    }
+  ],
+  "notifications": [],
+  "invoices": [
+    {
+      "id": "INV-2026-00918",
+      "orderId": "ORD-2026-10438",
+      "customer": "Evergreen Supply Co.",
+      "amount": 8420.5,
+      "currency": "USD",
+      "issuedOn": "2026-09-20",
+      "dueOn": "2026-09-27",
+      "status": "Paid",
+      "paidOn": "2026-09-25",
+      "memo": "Freight service · Portland to Seattle",
+      "history": [
+        {
+          "action": "Payment received",
+          "date": "Sep 25, 2026",
+          "detail": "Paid in full · ACH transfer"
+        }
+      ]
+    },
+    {
+      "id": "INV-2026-00924",
+      "orderId": "ORD-2026-10482",
+      "customer": "Northstar Retail",
+      "amount": 3675,
+      "currency": "USD",
+      "issuedOn": "2026-10-01",
+      "dueOn": "2026-10-15",
+      "status": "Pending",
+      "paidOn": "",
+      "memo": "Line-haul freight · Newark to Chicago",
+      "history": [
+        {
+          "action": "Invoice sent",
+          "date": "Oct 01, 2026",
+          "detail": "Invoice issued for freight service"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "company": "LogiCraft Logistics",
+    "timezone": "America/Chicago",
+    "emailNotifications": true
+  }
+}

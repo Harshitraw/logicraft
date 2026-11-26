@@ -7,10 +7,11 @@
     "dev": "vite --host localhost",
     "start": "vite --host localhost",
     "build": "vite build",
-    "lint": "oxlint",     
+    "lint": "oxlint",
     "preview": "vite preview"
   },
   "dependencies": {
+    "leaflet": "^1.9.4",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },

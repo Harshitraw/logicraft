@@ -71,7 +71,7 @@ export default function Landing() {
   return (
     <main className="landing-page">
       <Navbar />
-      <section className="hero-section" aria-label="Hero Section">
+      <section className="hero-section" id="home" aria-label="Hero Section">
         <div className="hero-copy">
           <h1>Move Smarter. Deliver Faster.</h1>
           <p>
@@ -216,7 +216,7 @@ export default function Landing() {
         </div>
       </section>
 
-      <section className="why-section" aria-label="Why LogiCraft">
+      <section className="why-section" id="about-us" aria-label="Why LogiCraft">
         <span className="why-label">why logicraft?</span>
         <p>
           From fleet operations to warehouse workflows and shipment tracking,
@@ -226,7 +226,7 @@ export default function Landing() {
       </section>
 
       <section className="solutions-section" id="solutions" aria-labelledby="solutions-title">
-        <h2 id="solutions-title">Solutions</h2>
+        <h2 id="solutions-title"><span id="get-started">Solutions</span></h2>
 
         <div className="solution-row">
           <article className="solution-details">

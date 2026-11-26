@@ -107,3 +107,45 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+.backend-connection {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 10px 14px;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.94);
+  color: #e2e8f0;
+  box-shadow: 0 8px 26px rgba(15, 23, 42, 0.2);
+  font: 500 12px/1.2 Inter, system-ui, sans-serif;
+}
+
+.backend-connection-indicator {
+  width: 8px;
+  height: 8px;
+  flex: 0 0 8px;
+  border-radius: 50%;
+  background: #fbbf24;
+}
+
+.backend-connection-connected .backend-connection-indicator {
+  background: #34d399;
+}
+
+.backend-connection-offline .backend-connection-indicator {
+  background: #fb7185;
+}
+
+.backend-connection button {
+  border: 0;
+  border-radius: 999px;
+  padding: 5px 10px;
+  background: #e2e8f0;
+  color: #0f172a;
+  font: inherit;
+  cursor: pointer;
+}

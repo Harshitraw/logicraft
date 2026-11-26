@@ -1,6 +1,12 @@
 import './Navbar.css'
 
-const navigationItems = ['Home', 'Solutions', 'Features', 'Industries', 'About Us']
+const navigationItems = [
+	{ label: 'Home', href: '/' },
+	{ label: 'Solutions', href: '#solutions' },
+	{ label: 'Features', href: '#solutions' },
+	{ label: 'Industries', href: '#solutions' },
+	{ label: 'About Us', href: '#about-us' },
+]
 
 export default function Navbar() {
 	return (
@@ -13,12 +19,12 @@ export default function Navbar() {
 				<div className="nav-links">
 					{navigationItems.map((item) => (
 						<a
-							key={item}
-							className={item === 'Home' ? 'nav-link-active' : ''}
-							href={`#${item.toLowerCase().replaceAll(' ', '-')}`}
-							aria-current={item === 'Home' ? 'page' : undefined}
+								key={item.label}
+								className={item.label === 'Home' ? 'nav-link-active' : ''}
+								href={item.href}
+								aria-current={item.label === 'Home' ? 'page' : undefined}
 						>
-							{item}
+								{item.label}
 						</a>
 					))}
 				</div>
@@ -27,7 +33,7 @@ export default function Navbar() {
 					<a className="nav-button nav-button-primary" href="#get-started">
 						Get Started
 					</a>
-					<a className="nav-button nav-button-secondary" href="#login">
+					<a className="nav-button nav-button-secondary" href="/dashboard">
 						Login
 					</a>
 				</div>
